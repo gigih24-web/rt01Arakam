@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kegiatan | RT 01A Rakam</title>
+
+    <meta
+        name="description"
+        content="Informasi kegiatan warga RT 01A Rakam."
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="brand">
+
+                <img
+                    src="img/logo-rt.png"
+                    alt="Logo RT 01A Rakam"
+                    class="brand-logo"
+                >
+
+                <div class="brand-text">
+                    <strong>RT 01A Rakam</strong>
+                    <span>Portal Warga</span>
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-navigation"
+                id="mainNavigation"
+                aria-label="Navigasi utama"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profil.html">
+                            Profil RT
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="informasi.html">
+                            Informasi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="kegiatan.html"
+                            class="active"
+                        >
+                            Kegiatan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="layanan.html">
+                            Layanan Warga
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kontak.html">
+                            Kontak
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+
+
+        <!-- ==================== PAGE HERO ==================== -->
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    KEGIATAN WARGA
+                </span>
+
+                <h1>
+                    Kegiatan RT 01A Rakam
+                </h1>
+
+                <p>
+                    Berbagai kegiatan dan aktivitas bersama warga
+                    untuk membangun lingkungan yang aktif, nyaman,
+                    dan guyub.
+                </p>
+
+
+                <nav
+                    class="breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+
+                    <a href="index.html">
+                        Beranda
+                    </a>
+
+                    <span>/</span>
+
+                    <span>
+                        Kegiatan
+                    </span>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FILTER ==================== -->
+        <section class="section activity-toolbar-section">
+
+            <div class="container">
+
+                <div class="activity-toolbar">
+
+
+                    <!-- SEARCH -->
+                    <div class="activity-search">
+
+                        <label
+                            for="searchActivity"
+                            class="sr-only"
+                        >
+                            Cari kegiatan
+                        </label>
+
+                        <input
+                            type="search"
+                            id="searchActivity"
+                            placeholder="Cari kegiatan..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <!-- FILTER -->
+                    <div class="activity-filter">
+
+                        <button
+                            type="button"
+                            class="activity-filter-button active"
+                            data-filter="all"
+                        >
+                            Semua
+                        </button>
+
+                        <button
+                            type="button"
+                            class="activity-filter-button"
+                            data-filter="lingkungan"
+                        >
+                            Lingkungan
+                        </button>
+
+                        <button
+                            type="button"
+                            class="activity-filter-button"
+                            data-filter="sosial"
+                        >
+                            Sosial
+                        </button>
+
+                        <button
+                            type="button"
+                            class="activity-filter-button"
+                            data-filter="keagamaan"
+                        >
+                            Keagamaan
+                        </button>
+
+                        <button
+                            type="button"
+                            class="activity-filter-button"
+                            data-filter="warga"
+                        >
+                            Warga
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== DAFTAR KEGIATAN ==================== -->
+        <section class="section activity-list-section">
+
+            <div class="container">
+
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <span class="section-label">
+                            AGENDA & KEGIATAN
+                        </span>
+
+                        <h2 class="section-heading">
+                            Kegiatan Warga
+                        </h2>
+
+                    </div>
+
+
+                    <p id="activityCount">
+                        Menampilkan kegiatan
+                    </p>
+
+                </div>
+
+
+                <!-- ==================== ACTIVITY GRID ==================== -->
+                <div
+                    class="activity-page-grid"
+                    id="activityGrid"
+                >
+
+
+                    <!-- KEGIATAN 1 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="lingkungan"
+                        data-title="kerja bakti lingkungan"
+                    >
+
+                        <div class="activity-page-image">
+
+                            <img
+                                src="img/kegiatan/kegiatan-1.jpg"
+                                alt="Kegiatan kerja bakti lingkungan"
+                            >
+
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Lingkungan
+                            </span>
+
+                            <time datetime="2026-09-28">
+                                28 September 2026
+                            </time>
+
+                            <h3>
+                                Kerja Bakti Lingkungan
+                            </h3>
+
+                            <p>
+                                Kegiatan kerja bakti bersama warga
+                                untuk membersihkan lingkungan sekitar
+                                RT 01A Rakam.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KEGIATAN 2 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="sosial"
+                        data-title="kegiatan sosial warga"
+                    >
+
+                        <div class="activity-page-image activity-placeholder">
+                            <span aria-hidden="true">
+                                🤝
+                            </span>
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Sosial
+                            </span>
+
+                            <time datetime="2026-09-25">
+                                25 September 2026
+                            </time>
+
+                            <h3>
+                                Kegiatan Sosial Warga
+                            </h3>
+
+                            <p>
+                                Kegiatan sosial yang melibatkan warga
+                                dalam mempererat hubungan dan kepedulian
+                                antarwarga.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KEGIATAN 3 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="keagamaan"
+                        data-title="kegiatan keagamaan warga"
+                    >
+
+                        <div class="activity-page-image activity-placeholder">
+                            <span aria-hidden="true">
+                                🕌
+                            </span>
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Keagamaan
+                            </span>
+
+                            <time datetime="2026-09-22">
+                                22 September 2026
+                            </time>
+
+                            <h3>
+                                Kegiatan Keagamaan Warga
+                            </h3>
+
+                            <p>
+                                Kegiatan keagamaan yang dilaksanakan
+                                bersama sebagai bagian dari kehidupan
+                                masyarakat RT 01A Rakam.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KEGIATAN 4 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="warga"
+                        data-title="pertemuan warga rt 01a rakam"
+                    >
+
+                        <div class="activity-page-image activity-placeholder">
+                            <span aria-hidden="true">
+                                🏠
+                            </span>
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Warga
+                            </span>
+
+                            <time datetime="2026-09-20">
+                                20 September 2026
+                            </time>
+
+                            <h3>
+                                Pertemuan Warga
+                            </h3>
+
+                            <p>
+                                Pertemuan warga untuk membahas berbagai
+                                hal yang berkaitan dengan lingkungan
+                                RT 01A Rakam.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KEGIATAN 5 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="lingkungan"
+                        data-title="penghijauan lingkungan"
+                    >
+
+                        <div class="activity-page-image activity-placeholder">
+                            <span aria-hidden="true">
+                                🌱
+                            </span>
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Lingkungan
+                            </span>
+
+                            <time datetime="2026-09-17">
+                                17 September 2026
+                            </time>
+
+                            <h3>
+                                Penghijauan Lingkungan
+                            </h3>
+
+                            <p>
+                                Kegiatan penanaman dan perawatan tanaman
+                                untuk menciptakan lingkungan yang lebih
+                                hijau dan nyaman.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KEGIATAN 6 -->
+                    <article
+                        class="activity-page-card"
+                        data-category="warga"
+                        data-title="gotong royong warga"
+                    >
+
+                        <div class="activity-page-image activity-placeholder">
+                            <span aria-hidden="true">
+                                👥
+                            </span>
+                        </div>
+
+
+                        <div class="activity-page-content">
+
+                            <span class="activity-category">
+                                Warga
+                            </span>
+
+                            <time datetime="2026-09-14">
+                                14 September 2026
+                            </time>
+
+                            <h3>
+                                Gotong Royong Warga
+                            </h3>
+
+                            <p>
+                                Kegiatan gotong royong sebagai bentuk
+                                kebersamaan dan kepedulian warga terhadap
+                                lingkungan sekitar.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="activity-link"
+                            >
+                                Lihat Kegiatan →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ==================== EMPTY STATE ==================== -->
+                <div
+                    class="activity-empty"
+                    id="activityEmpty"
+                    hidden
+                >
+
+                    <span aria-hidden="true">
+                        🔎
+                    </span>
+
+                    <h3>
+                        Kegiatan tidak ditemukan
+                    </h3>
+
+                    <p>
+                        Coba gunakan kata kunci atau kategori lainnya.
+                    </p>
+
+                </div>
+
+
+                <!-- ==================== PAGINATION ==================== -->
+                <nav
+                    class="activity-pagination"
+                    aria-label="Navigasi halaman kegiatan"
+                >
+
+                    <button
+                        type="button"
+                        class="pagination-button active"
+                    >
+                        1
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                    >
+                        2
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                    >
+                        3
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                        aria-label="Halaman berikutnya"
+                    >
+                        →
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CTA ==================== -->
+        <section class="section cta-section">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="section-label">
+                        KEGIATAN WARGA
+                    </span>
+
+                    <h2>
+                        Mari ikut berpartisipasi
+                    </h2>
+
+                    <p>
+                        Bersama-sama membangun lingkungan RT 01A Rakam
+                        yang aktif, nyaman, dan penuh kebersamaan.
+                    </p>
+
+                    <a
+                        href="index.html#layanan"
+                        class="btn btn-primary"
+                    >
+                        Layanan Warga
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer
+        class="site-footer"
+        id="kontak"
+    >
+
+        <div class="container footer-container">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <img
+                        src="img/logo-rt.png"
+                        alt="Logo RT 01A Rakam"
+                        class="brand-logo"
+                    >
+
+                    <div class="brand-text">
+
+                        <strong>
+                            RT 01A Rakam
+                        </strong>
+
+                        <span>
+                            Portal Warga
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    Portal informasi dan layanan warga
+                    RT 01A Rakam.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Hubungi Kami
+                </h3>
+
+                <address>
+
+                    <p>
+                        RT 01A Rakam
+                    </p>
+
+                    <p>
+                        Rakam, Indonesia
+                    </p>
+
+                    <p>
+                        <a href="mailto:rt01arakam@example.com">
+                            rt01arakam@example.com
+                        </a>
+                    </p>
+
+                </address>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy;
+                    <span id="currentYear"></span>
+                    RT 01A Rakam.
+                    Semua hak dilindungi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

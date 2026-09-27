@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informasi | RT 01A Rakam</title>
+    <meta
+        name="description"
+        content="Pusat informasi dan pengumuman warga RT 01A Rakam."
+    >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="container header-container">
+
+            <a href="index.html" class="brand">
+                <img
+                    src="img/logo-rt.png"
+                    alt="Logo RT 01A Rakam"
+                    class="brand-logo"
+                >
+
+                <div class="brand-text">
+                    <strong>RT 01A Rakam</strong>
+                    <span>Portal Warga</span>
+                </div>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav class="main-navigation" id="mainNavigation" aria-label="Navigasi utama">
+                <ul>
+                    <li>
+                        <a href="index.html">Beranda</a>
+                    </li>
+
+                    <li>
+                        <a href="profil.html">Profil RT</a>
+                    </li>
+
+                    <li>
+                        <a href="informasi.html" class="active">
+                            Informasi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kegiatan.html">Kegiatan</a>
+                    </li>
+
+                    <li>
+                        <a href="layanan.html">Layanan Warga</a>
+                    </li>
+
+                    <li>
+                        <a href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ==================== PAGE HERO ==================== -->
+        <section class="page-hero">
+            <div class="container">
+
+                <span class="section-label">
+                    PUSAT INFORMASI
+                </span>
+
+                <h1>
+                    Informasi & Pengumuman
+                </h1>
+
+                <p>
+                    Temukan berbagai informasi, pengumuman, kegiatan,
+                    dan kabar terbaru seputar lingkungan RT 01A Rakam.
+                </p>
+
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Beranda</a>
+                    <span>/</span>
+                    <span>Informasi</span>
+                </nav>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== SEARCH & FILTER ==================== -->
+        <section class="section information-toolbar-section">
+            <div class="container">
+
+                <div class="information-toolbar">
+
+                    <div class="information-search">
+                        <label for="searchInformation" class="sr-only">
+                            Cari informasi
+                        </label>
+
+                        <input
+                            type="search"
+                            id="searchInformation"
+                            placeholder="Cari informasi..."
+                            autocomplete="off"
+                        >
+                    </div>
+
+
+                    <div class="information-filter">
+                        <button
+                            type="button"
+                            class="filter-button active"
+                            data-filter="all"
+                        >
+                            Semua
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-button"
+                            data-filter="pengumuman"
+                        >
+                            Pengumuman
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-button"
+                            data-filter="kegiatan"
+                        >
+                            Kegiatan
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-button"
+                            data-filter="lingkungan"
+                        >
+                            Lingkungan
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-button"
+                            data-filter="warga"
+                        >
+                            Warga
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== INFORMASI TERBARU ==================== -->
+        <section class="section information-list-section">
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+                        <span class="section-label">
+                            INFORMASI TERBARU
+                        </span>
+
+                        <h2 class="section-heading">
+                            Kabar Terbaru RT 01A
+                        </h2>
+                    </div>
+
+                    <p id="informationCount">
+                        Menampilkan informasi
+                    </p>
+
+                </div>
+
+
+                <!-- GRID INFORMASI -->
+                <div
+                    class="information-page-grid"
+                    id="informationGrid"
+                >
+
+                    <!-- INFORMASI 1 -->
+                    <article
+                        class="information-page-card"
+                        data-category="pengumuman"
+                        data-title="pengumuman kerja bakti lingkungan"
+                    >
+
+                        <div class="information-page-image">
+                            <img
+                                src="img/informasi/pengumuman-1.jpg"
+                                alt="Pengumuman kerja bakti lingkungan"
+                            >
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Pengumuman
+                            </span>
+
+                            <time datetime="2026-09-20">
+                                20 September 2026
+                            </time>
+
+                            <h3>
+                                Pengumuman Kerja Bakti Lingkungan
+                            </h3>
+
+                            <p>
+                                Warga RT 01A Rakam diharapkan mengikuti
+                                kegiatan kerja bakti bersama untuk menjaga
+                                kebersihan dan kenyamanan lingkungan.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- INFORMASI 2 -->
+                    <article
+                        class="information-page-card"
+                        data-category="kegiatan"
+                        data-title="kegiatan warga rt 01a rakam"
+                    >
+
+                        <div class="information-page-image information-placeholder">
+                            <span aria-hidden="true">📅</span>
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Kegiatan
+                            </span>
+
+                            <time datetime="2026-09-18">
+                                18 September 2026
+                            </time>
+
+                            <h3>
+                                Kegiatan Warga RT 01A Rakam
+                            </h3>
+
+                            <p>
+                                Informasi mengenai kegiatan bersama yang
+                                dilaksanakan oleh warga RT 01A Rakam.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- INFORMASI 3 -->
+                    <article
+                        class="information-page-card"
+                        data-category="lingkungan"
+                        data-title="kebersihan lingkungan rt"
+                    >
+
+                        <div class="information-page-image information-placeholder">
+                            <span aria-hidden="true">🌱</span>
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Lingkungan
+                            </span>
+
+                            <time datetime="2026-09-15">
+                                15 September 2026
+                            </time>
+
+                            <h3>
+                                Menjaga Kebersihan Lingkungan
+                            </h3>
+
+                            <p>
+                                Mari bersama-sama menjaga kebersihan,
+                                keamanan, dan kenyamanan lingkungan RT 01A Rakam.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- INFORMASI 4 -->
+                    <article
+                        class="information-page-card"
+                        data-category="warga"
+                        data-title="informasi pelayanan warga"
+                    >
+
+                        <div class="information-page-image information-placeholder">
+                            <span aria-hidden="true">🏠</span>
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Warga
+                            </span>
+
+                            <time datetime="2026-09-12">
+                                12 September 2026
+                            </time>
+
+                            <h3>
+                                Informasi Pelayanan Warga
+                            </h3>
+
+                            <p>
+                                Informasi mengenai pelayanan administrasi
+                                dan kebutuhan warga RT 01A Rakam.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- INFORMASI 5 -->
+                    <article
+                        class="information-page-card"
+                        data-category="kegiatan"
+                        data-title="kegiatan masyarakat"
+                    >
+
+                        <div class="information-page-image information-placeholder">
+                            <span aria-hidden="true">🤝</span>
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Kegiatan
+                            </span>
+
+                            <time datetime="2026-09-10">
+                                10 September 2026
+                            </time>
+
+                            <h3>
+                                Kegiatan Masyarakat
+                            </h3>
+
+                            <p>
+                                Berbagai kegiatan masyarakat yang dilakukan
+                                bersama oleh warga RT 01A Rakam.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- INFORMASI 6 -->
+                    <article
+                        class="information-page-card"
+                        data-category="pengumuman"
+                        data-title="pengumuman warga rt 01a"
+                    >
+
+                        <div class="information-page-image information-placeholder">
+                            <span aria-hidden="true">📢</span>
+                        </div>
+
+                        <div class="information-page-content">
+
+                            <span class="information-category">
+                                Pengumuman
+                            </span>
+
+                            <time datetime="2026-09-05">
+                                5 September 2026
+                            </time>
+
+                            <h3>
+                                Pengumuman Warga RT 01A
+                            </h3>
+
+                            <p>
+                                Informasi dan pengumuman terbaru yang perlu
+                                diketahui oleh seluruh warga RT 01A Rakam.
+                            </p>
+
+                            <a href="#" class="information-link">
+                                Baca Selengkapnya →
+                            </a>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <!-- EMPTY STATE -->
+                <div
+                    class="information-empty"
+                    id="informationEmpty"
+                    hidden
+                >
+                    <span aria-hidden="true">🔎</span>
+
+                    <h3>
+                        Informasi tidak ditemukan
+                    </h3>
+
+                    <p>
+                        Coba gunakan kata kunci atau kategori lainnya.
+                    </p>
+                </div>
+
+
+                <!-- PAGINATION -->
+                <nav
+                    class="information-pagination"
+                    aria-label="Navigasi halaman informasi"
+                >
+
+                    <button
+                        type="button"
+                        class="pagination-button active"
+                    >
+                        1
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                    >
+                        2
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                    >
+                        3
+                    </button>
+
+                    <button
+                        type="button"
+                        class="pagination-button"
+                        aria-label="Halaman berikutnya"
+                    >
+                        →
+                    </button>
+
+                </nav>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== CTA ==================== -->
+        <section class="section cta-section">
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="section-label">
+                        PORTAL WARGA
+                    </span>
+
+                    <h2>
+                        Ada informasi yang ingin disampaikan?
+                    </h2>
+
+                    <p>
+                        Gunakan layanan warga atau hubungi pengurus RT
+                        untuk menyampaikan informasi dan kebutuhan Anda.
+                    </p>
+
+                    <a
+                        href="index.html#layanan"
+                        class="btn btn-primary"
+                    >
+                        Layanan Warga
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" id="kontak">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+
+                    <img
+                        src="img/logo-rt.png"
+                        alt="Logo RT 01A Rakam"
+                        class="brand-logo"
+                    >
+
+                    <div class="brand-text">
+                        <strong>RT 01A Rakam</strong>
+                        <span>Portal Warga</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Portal informasi dan layanan warga
+                    RT 01A Rakam.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Hubungi Kami
+                </h3>
+
+                <address>
+
+                    <p>
+                        RT 01A Rakam
+                    </p>
+
+                    <p>
+                        Rakam, Indonesia
+                    </p>
+
+                    <p>
+                        <a href="mailto:rt01arakam@example.com">
+                            rt01arakam@example.com
+                        </a>
+                    </p>
+
+                </address>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy;
+                    <span id="currentYear"></span>
+                    RT 01A Rakam.
+                    Semua hak dilindungi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
